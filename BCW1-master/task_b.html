@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation JavaScript</h1>
+
+    <form novalidate>
+        <!-- your input elements here -->
+		<label for="firstname">Firstname</label>
+		</br>
+		<input type="name" id="firstname" name="firstName" required class="required" />
+		</br>
+		<label for="lastname">Lastname</label>
+		</br>
+		<input type="name" id="lastname" name="lastName" required class="required" />
+		</br>
+		<label for="email">Email</label>
+		</br>
+		<input type="email" id="email" name="email" required class="required" />
+		</br>
+		<label for="number">Phone number</label>
+		</br>
+
+		<input type="tel" id="phone" name="phone" minlength="13" maxlength="13" pattern="{0-9}[9]"  />
+		</br>
+		<label for="address">Address</label>
+		</br>
+		<input type="address" id="address" name="address" />
+		</br>
+		<label for="postal_code">Postal code</label>
+		</br>
+		<input type="text" id="postal_code" name="postal_code" minlength="5" maxlength="5" size="5" pattern="{0-9}[5]"  />
+		</br>
+		<label for="passwd">Password</label>
+		</br>
+		<input type="password" id="passwd" name="passwd" required class="required" />
+		</br>
+		<input type="submit" value="submit" />
+		</br>
+    </form>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
